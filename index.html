@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kasir Simple</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card">
+        <h1>Kasir Syawal</h1>
+
+        <input id="nama" placeholder="Nama Barang">
+        <input id="harga" type="number" placeholder="Harga">
+        <button onclick="tambah()">Tambah</button>
+
+        <ul id="list"></ul>
+
+        <input id="bayar" type="number" placeholder="Uang Bayar" oninput="hitung()">
+
+        <p>Total: <b id="total">Rp 0</b></p>
+        <p>Kembalian: <b id="kembali">Rp 0</b></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
